@@ -12,8 +12,8 @@ const NewsItemBlock = styled.div`
       object-fit: cover;
     }
   }
-  .content {
-    h2 {
+  .contents {
+    h3 {
       margin: 0;
       a {
         color: black;
@@ -42,11 +42,11 @@ const NewsItem = ({ article }) => {
         </div>
       )}
       <div className="contents">
-        <h2>
+        <h3>
           <a href={url} target="_blank" rel="noopener noreferrer">
             {title}
           </a>
-        </h2>
+        </h3>
         <p>{description}</p>
       </div>
     </NewsItemBlock>

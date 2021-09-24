@@ -1,11 +1,10 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import { useState } from 'react';
-import axios from 'axios';
-import NewList from './components/NewsList';
+import { Route } from 'react-router';
+import NewsPage from './pages/NewsPage';
 
 const App = () => {
-  return <NewList />;
+  return <Route path="/:category?" component={NewsPage} />;
 };
 
 export default App;
